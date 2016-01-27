@@ -7,6 +7,9 @@ Scheduler Plugin for Wordpress
 # About
 A scheduling tool for booking of children into childcare, wordpress plugin for supported versions.
 
+# DB
+Diagram of planned DB
+![MySQL DB Diagram](https://cloud.githubusercontent.com/assets/4591160/12632638/84f438ee-c5ad-11e5-9e0a-b8891dffe007.png)
 
 # License
     Copyright (C) 2016 Matt Watt
