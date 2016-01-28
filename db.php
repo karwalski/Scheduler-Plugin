@@ -1,7 +1,4 @@
-// Replace mydb with table name
-
-
-CREATE TABLE IF NOT EXISTS `mydb`.`parent` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`parent` (
   `id` INT NOT NULL,
   `username` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
@@ -22,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`parent` (
 ;
 
 
-CREATE TABLE IF NOT EXISTS `mydb`.`child` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`child` (
   `id` INT NOT NULL,
   `parentid` INT NULL,
   `firstname` VARCHAR(45) NULL,
@@ -38,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`child` (
 ;
 
 
-CREATE TABLE IF NOT EXISTS `mydb`.`booking` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`booking` (
   `id` INT NOT NULL,
   `childid` INT NULL,
   `starttime` DECIMAL(4,2) NULL,
@@ -46,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`booking` (
   PRIMARY KEY (`id`))
 ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`admin` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`admin` (
   `id` INT NOT NULL,
   `starttime` DECIMAL(4,2) NULL,
   `endtime` DECIMAL(4,2) NULL,
@@ -56,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`admin` (
 ;
 
 
-CREATE TABLE IF NOT EXISTS `mydb`.`staff` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`staff` (
   `id` INT NOT NULL,
   `username` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
@@ -67,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`staff` (
 ;
 
 
-CREATE TABLE IF NOT EXISTS `mydb`.`available` (
+CREATE TABLE IF NOT EXISTS `scheduler`.`available` (
   `id` INT NOT NULL,
   `staffid` INT NULL,
   `starttime` DECIMAL(4,2) NULL,
