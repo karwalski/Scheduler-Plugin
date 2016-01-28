@@ -113,7 +113,7 @@ $sql = "CREATE TABLE IF NOT EXISTS `scheduler`.`available` (
   `staffid` INT NULL,
   `starttime` DECIMAL(4,2) NULL,
   `endtime` DECIMAL(4,2) NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`))
   ";
   
   if ($conn->query($sql) === TRUE) {
